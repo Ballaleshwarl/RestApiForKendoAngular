@@ -1,20 +1,8 @@
 
-v
-java:S2293+"YReplace the type specification in this constructor call with the diamond operator ("<>").(™ÖÃ€8àƒ¤ãÁ1
-v
-java:S22938"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ç†’Ş8àƒ¤ãÁ1
 {
 java:S2293V"YReplace the type specification in this constructor call with the diamond operator ("<>").(Òè¥àşÿÿÿÿ8áƒ¤ãÁ1
 {
 java:S2293]"YReplace the type specification in this constructor call with the diamond operator ("<>").(’Ïè¼üÿÿÿÿ8áƒ¤ãÁ1
 {	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ìö¹÷øÿÿÿÿ8âƒ¤ãÁ1
-_
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8­Ã¨ãÁ1
-_
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¥®ãÁ1
-_
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¥®ãÁ1
 d
 java:S1128"BRemove this unused import 'com.springRest.demo1.entities.Student'.(ğ³­Şÿÿÿÿÿ8øƒ¤ãÁ1
-h
-java:S1128"FRemove this unused import 'org.springframework.stereotype.Controller'.(øŠ—Öùÿÿÿÿ8øƒ¤ãÁ1
