@@ -1,8 +1,13 @@
 package com.springRest.demo1.services;
 
 import com.springRest.demo1.Exception.ResourceNotFoundException;
+import com.springRest.demo1.entities.Electronics;
 import com.springRest.demo1.entities.Employee;
+import com.springRest.demo1.entities.Student;
+import com.springRest.demo1.repository.ElectronicsRepo;
 import com.springRest.demo1.repository.EmployeeRepo;
+import com.springRest.demo1.repository.StudentRepo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -43,6 +48,20 @@ public class EmployeeServiceImpl  implements  EmployeeService{
     }
 
     private EmployeeRepo employeeRepo;
+
+    @Autowired
+    private ElectronicsRepo electronicsRe;
+    @Override
+    public List<Electronics> getElectronics() {
+        return electronicsRe.findAll();
+    }
+
+    @Autowired
+    private StudentRepo studentRepo;
+    @Override
+    public List<Student> getStudents() {
+        return studentRepo.findAll();
+    }
 
     public EmployeeServiceImpl(EmployeeRepo employeeRepo) {
         super();

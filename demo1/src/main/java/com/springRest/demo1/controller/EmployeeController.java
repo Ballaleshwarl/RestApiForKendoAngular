@@ -1,14 +1,10 @@
 package com.springRest.demo1.controller;
 
 import com.springRest.demo1.entities.Employee;
-import com.springRest.demo1.entities.Student;
-import com.springRest.demo1.services.ElectronicsService;
 import com.springRest.demo1.services.EmployeeService;
-import com.springRest.demo1.services.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -20,11 +16,9 @@ public class EmployeeController {
     @Autowired
     private EmployeeService employeeService;
 
-    @Autowired
-    private ElectronicsService electronicsService;
 
-    @Autowired
-    private StudentService studentService;
+
+
 
     public EmployeeController(EmployeeService employeeService) {
         super();
@@ -67,12 +61,12 @@ public class EmployeeController {
            return ResponseEntity.ok(obj);
        }else if(Objects.equals(value, "electronics")){
 
-           obj =electronicsService.getElectronics();
+           obj =employeeService.getElectronics();
 
            return ResponseEntity.ok(obj);
        }else if(Objects.equals(value, "students")){
 
-           obj =studentService.getStudents();
+           obj =employeeService.getStudents();
 
            return ResponseEntity.ok(obj);
        }
