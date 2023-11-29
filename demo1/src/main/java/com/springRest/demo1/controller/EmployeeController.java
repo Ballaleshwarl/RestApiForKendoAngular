@@ -44,6 +44,19 @@ public class EmployeeController {
         return new ResponseEntity<Employee>(employeeService.getEmployeeById(id),HttpStatus.OK);
     }
 
+    @GetMapping("/getemp/query")
+    public ResponseEntity<Employee> getData(@RequestParam(name = "id") int id,@RequestParam(name = "fname") String fname){
+
+        System.out.println(id);
+        System.out.println(fname);
+
+        Employee e = new Employee();
+        e.setId(id);
+        e.setfName(fname);
+
+        return ResponseEntity.ok(e);
+    }
+
     @PutMapping("/employee/{id}")
     public  ResponseEntity<Employee> updateEmployee(@PathVariable Long id, @RequestBody Employee emp){
 

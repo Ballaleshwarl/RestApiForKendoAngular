@@ -1,12 +1,14 @@
 
 v
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(™ÖÃ€8Ö†ë¿1
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(™ÖÃ€8–¡ìáÁ1
 v
-java:S2293,"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ç†’Ş8×†ë¿1
+java:S2293,"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ç†’Ş8–¡ìáÁ1
 {
-java:S22932"YReplace the type specification in this constructor call with the diamond operator ("<>").(Òè¥àşÿÿÿÿ8×†ë¿1
+java:S2293?"YReplace the type specification in this constructor call with the diamond operator ("<>").(Òè¥àşÿÿÿÿ8—¡ìáÁ1
 {
-java:S22939"YReplace the type specification in this constructor call with the diamond operator ("<>").(’Ïè¼üÿÿÿÿ8×†ë¿1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ìö¹÷øÿÿÿÿ8Ù†ë¿1
+java:S2293F"YReplace the type specification in this constructor call with the diamond operator ("<>").(’Ïè¼üÿÿÿÿ8—¡ìáÁ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ìö¹÷øÿÿÿÿ8˜¡ìáÁ1
+G	java:S1062"+Replace this use of System.out by a logger.(ö¡¹ê8«¡ìáÁ1
+G	java:S1063"+Replace this use of System.out by a logger.(õ¿î8¬¡ìáÁ1
 h
-java:S1128"FRemove this unused import 'org.springframework.stereotype.Controller'.(øŠ—Öùÿÿÿÿ8ü†ë¿1
+java:S1128"FRemove this unused import 'org.springframework.stereotype.Controller'.(øŠ—Öùÿÿÿÿ8¯¡ìáÁ1
