@@ -1,18 +1,30 @@
 package com.springRest.demo1.controller;
 
 import com.springRest.demo1.entities.Employee;
+import com.springRest.demo1.entities.Student;
+import com.springRest.demo1.services.ElectronicsService;
 import com.springRest.demo1.services.EmployeeService;
+import com.springRest.demo1.services.StudentService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Objects;
 
 @RestController
 public class EmployeeController {
 
+    @Autowired
     private EmployeeService employeeService;
+
+    @Autowired
+    private ElectronicsService electronicsService;
+
+    @Autowired
+    private StudentService studentService;
 
     public EmployeeController(EmployeeService employeeService) {
         super();
@@ -45,16 +57,27 @@ public class EmployeeController {
     }
 
     @GetMapping("/getemp/query")
-    public ResponseEntity<Employee> getData(@RequestParam(name = "id") int id,@RequestParam(name = "fname") String fname){
+    public ResponseEntity<Object> getData(@RequestParam(name = "id") int id,@RequestParam(name = "value") String value){
 
-        System.out.println(id);
-        System.out.println(fname);
+        Object obj = null;
+       if(Objects.equals(value, "employee")){
 
-        Employee e = new Employee();
-        e.setId(id);
-        e.setfName(fname);
+           obj =employeeService.getAllEmployee();
 
-        return ResponseEntity.ok(e);
+           return ResponseEntity.ok(obj);
+       }else if(Objects.equals(value, "electronics")){
+
+           obj =electronicsService.getElectronics();
+
+           return ResponseEntity.ok(obj);
+       }else if(Objects.equals(value, "students")){
+
+           obj =studentService.getStudents();
+
+           return ResponseEntity.ok(obj);
+       }
+
+      return  ResponseEntity.ok(obj);
     }
 
     @PutMapping("/employee/{id}")
