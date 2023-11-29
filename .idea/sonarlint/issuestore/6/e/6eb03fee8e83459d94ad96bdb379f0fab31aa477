@@ -1,4 +1,4 @@
 
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Κλόÿÿÿÿ
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Κλόÿÿÿÿ8ψτρίΑ1
 
-java:S1128"dRemove this unused import 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration'.(¦–·Λ8‰΅Σ¨ΐ1
+java:S1128"dRemove this unused import 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration'.(¦–·Λ8‚υρίΑ1
